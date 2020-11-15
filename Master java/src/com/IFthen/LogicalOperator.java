@@ -21,6 +21,11 @@ public class LogicalOperator {
             System.out.println("2. You got the high score!");
         }
 
+        //Senario 4
+        if (topScore < 100){
+            System.out.println("2. You got the high score!");
+        }
+
 
     }
 
