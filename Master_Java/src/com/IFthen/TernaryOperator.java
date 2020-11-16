@@ -4,7 +4,7 @@ public class TernaryOperator {
     public static void main(String[] args) {
 
         int ageOfClient = 20;
-        boolean isEighteenOrOver = (ageOfClient ==200)  ? true : false;
+        boolean isEighteenOrOver = (ageOfClient == 200) ? true : false;
         System.out.println(isEighteenOrOver);
         //if ageOfClient is true assign to the true
         //if ageOfClient is fase assign to the false
@@ -18,16 +18,16 @@ public class TernaryOperator {
 
         //Senario 1
         boolean wasCar = isCar ? true : false;
-        if (wasCar){
+        if (wasCar) {
             System.out.println("1. wasCar is true");
         }//due to false not execute the wascar is true statment
 
         //Senario 2
         isCar = true;
-        boolean wasCar1 = isCar ?  true : false;
-            if (wasCar1){
-                System.out.println("2. WasCar is true");
-            }
+        boolean wasCar1 = isCar ? true : false;
+        if (wasCar1) {
+            System.out.println("2. WasCar is true");
+        }
 
     }
 }
