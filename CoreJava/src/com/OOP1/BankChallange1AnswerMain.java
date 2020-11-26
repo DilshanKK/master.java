@@ -4,7 +4,7 @@ public class BankChallange1AnswerMain {
     public static void main(String[] args) {
 
         // BankChallange1AnswerBank bobAccount = new BankChallange1AnswerBank(12345, 0.0, "Bob Brown", "Bob@gmail.com", 777846283);
-        BankChallange1AnswerBank bobAccount = new BankChallange1AnswerBank();
+       BankChallange1AnswerBank bobAccount = new BankChallange1AnswerBank();
 //        bobAccount.setAccount(12345);
 //        bobAccount.setBalance(0.0);
 //        bobAccount.setName("Bob Brown");

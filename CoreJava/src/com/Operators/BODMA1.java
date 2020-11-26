@@ -11,7 +11,16 @@ public class BODMA1 {
 // int * double = double
         System.out.println(2%5);
         System.out.println(2%4);
+
+
+
+
+
+
+
+
     }
+
 }
 
 
@@ -21,3 +30,5 @@ public class BODMA1 {
 //M - Multipication - wadikireem
 //A - Addition
 //S - Subtraction
+
+
