@@ -7,12 +7,12 @@ public class MyBank1 {
     private int mobileNO;
     private double balance;
 
-    public MyBank1() {
+    public MyBank1() { // constractor 1
         this(1221, "Bobby", "boby@gmail.com", 777846283, 1000);
         System.out.println("Emty constracture");
     }
 
-    public MyBank1(int accNo, String name, String email, int mobileNO, double balance) {
+    public MyBank1(int accNo, String name, String email, int mobileNO, double balance) { // constrcuter 2
         // setName(name); dnt call setters from using  constructors
         this.accNo = accNo;
         this.name = name;
@@ -22,7 +22,7 @@ public class MyBank1 {
 
         System.out.println("1 constructor called");
     }
-    public MyBank1(String name, double balance) {
+    public MyBank1(String name, double balance) { // constrcuter 3
        this(12121, name,"dilsahn@com", 7209098, balance);
         System.out.println("third constrcuter called");
 

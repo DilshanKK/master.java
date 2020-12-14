@@ -10,7 +10,7 @@ public class MyBank1Main {
 
         System.out.println(bobsAccount.getName());
         bobsAccount.deposit(100);
-        bobsAccount.withdraw(50);
+        bobsAccount.withdraw(1050);
 
         MyBank1 dilshanAccount = new MyBank1( "dilshan", 1000);
         System.out.println("Holder name is "+ dilshanAccount.getName() +" " +"Holders balance is "+ dilshanAccount.getBalance() + "Holder accNo " + dilshanAccount.getAccNo());
