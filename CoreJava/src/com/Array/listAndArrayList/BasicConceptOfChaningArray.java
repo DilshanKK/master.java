@@ -31,17 +31,16 @@ public class BasicConceptOfChaningArray {
     }
 
     private static void resizeArray() {
-     int[] original = baseData;
+        int[] original = baseData;
 
         baseData = new int[12];
 
-        for (int i =0; i< original.length; i ++){
+        for (int i = 0; i < original.length; i++) {
             baseData[i] = original[i];
 
         }
 
     }
-
 
 
 }
