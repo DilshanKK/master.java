@@ -1,10 +1,12 @@
 package com.OOP2.Polymorphism;
 
 class Movie {
+
     private String name;
 
     public Movie(String name) {
         this.name = name;
+
     }
 
     public String plot() {
@@ -16,27 +18,29 @@ class Movie {
     }
 }
 
-class Jaw extends Movie {
+class Jaws extends Movie {
 
-    public Jaw() {
-        super("Jaw");
+
+    public Jaws() {
+        super(" Jaws");
     }
 
-    @Override
     public String plot() {
-        return " A shark eat lots of people ";
+        return " A shark eat lot of people";
     }
 }
 
-class IndipendentDay extends Movie {
 
-    public IndipendentDay() {
-        super(" Independence Day ");
+class IndependentDay extends Movie {
+
+
+    public IndependentDay() {// Independent day is not Jaw.  super() call Movie consctruter()
+        super("Independent Day");
     }
 
     @Override
     public String plot() {
-        return " Alience attempt to take plannet earth";
+        return " Aliens attemp to take over planet earth ";
     }
 }
 
@@ -48,66 +52,75 @@ class MazeRunner extends Movie {
 
     @Override
     public String plot() {
-        return " Kids try and escape a maze";
+        return "Kids try and escape a maze";
     }
 }
 
 class StarWars extends Movie {
 
     public StarWars() {
-        super(" Star Wars");
+        super(" Star wars ");
     }
 
     @Override
     public String plot() {
-        return " Imperial forces try to over the universe";
+        return " Imperial forces try to take over the univers";
     }
 }
 
 class Forgetable extends Movie {
-
     public Forgetable() {
         super("Forgetable");
     }
-    // no plot method override
+    // no plot method
 }
 
+class Main {
 
-public class Main {
-    //its purpose is return a ramdom movie
     public static void main(String[] args) {
 
-        for (int i =0; i < 11; i++){
-            Movie movie = randomMovie();
-            System.out.println("Movie #" +i + " : " + movie.getName() + "\n" + "Plot : "+ movie.plot() +" \n");
+        for (int i = 0; i < 11; i++) {
+
+            Movie movie = randomMovie(); // randomMovie method eka i genarate wena hama paarama randomMovie() eka call krnawa
+
+            // randomMovie () eken return wana values allagannawa movie kyna varible name eken.
+
+            System.out.println(" movie # " + i + " : " + movie.getName() + "\n" +
+                    "plot :" + movie.plot() + " \n");
+
         }
+
 
     }
 
-    public static Movie randomMovie(){ // Movie object ekak rturn karnawa.
-        int randomNumber = (int) (Math.random() *5 +1);
-        System.out.println("Genarated ramdom number was " + randomNumber);
-        //Jaw is a movie
-        //ID is a movie
-        //MazeRunner is a movie.
-        //Movie is the parents class eka nisa parents class eken allagnnawa meke return krnawa Jaw , inclide ithuru movies
+    public static Movie randomMovie() { // method return type eka movie object 1k
 
-        switch (randomNumber){
+        //apita movies jathi okkoma return karangana on ekai parents class movie danne.
+        // Movie wenuwata Jaws dala balanna ethkota therei passe amathka unoth
 
+        int randomMovie = (int) (Math.random() * 5) + 1;
+        System.out.println(" Random number generated was " + randomMovie);
+        switch (randomMovie) {
             case 1:
-                return new Jaw();
-               // break; return krnawa kynne break wag. return karama nawatha call karapu thanata ynawa
+                return new Jaws(); //object eka kyanne muli class eke public , instence dewal //return tynwam break one na.
             case 2:
-                return new IndipendentDay();
+                return new IndependentDay();
             case 3:
                 return new MazeRunner();
             case 4:
                 return new StarWars();
             case 5:
                 return new Forgetable();
-            default:
         }
         return null;
-    }
 
+
+    }
 }
+// 1. software eka run wenakotama constrcter and instence dewal ram eke load krnagwaw.
+//2. Movie kyna object eke return krna hadanawanwa randomMovie kyna method ekak.
+//3 random no ekak genarate krla switch ekata awama e case ekata adala switch eke tyna object eka reurn krnawa ex- Jaw()
+//4 eta passe e return wela ena object eka allgannawa movie kyna variable name eken.   Movie movie = randomMovie(); methana Movie kiyana parent class eka
+//ganne okkoma object tika gana ona nisa. ( ithuru movie names)
+//5. forloop eken i value ekata adala reurn wena value eka arn getname gannawa.
+// randomMovie method eka i genarate wena hama paarama randomMovie() eka call krnawa
